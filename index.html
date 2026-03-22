@@ -7,20 +7,25 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <div class="logo"><img src="./Images/logo.png" alt=""></div>
-        <nav>
-            <a href="#" class="nav-link"><span>Home</span></a>
-            <a href="#" class="nav-link"><span>About Us</span></a>
-            <a href="#" class="nav-link"><span>Features</span></a>
-            <a href="#" class="nav-link"><span>Service</span></a>
-            <a href="#" class="nav-link"><span>Contact</span></a>
-        </nav>
-        <nav class="contact-site">
-            <button class="login-btn">Login</button>
-            <button class="get-in-btn">Get in touch</button>
-        </nav>
-    </header>
+   <header>
+    <div class="logo"><img src="./Images/logo.png" alt=""></div>
+    <button class="hamburger" aria-label="Menu">&#9776;</button>
+
+    <nav>
+        <span><a href="#" class="nav-link">Home</a></span>
+        <span><a href="#" class="nav-link">About Us</a></span>
+        <span><a href="#" class="nav-link">Features</a></span>
+        <span><a href="#" class="nav-link">Service</a></span>
+        <span><a href="#" class="nav-link">Contact</a></span>
+    </nav>
+
+    <nav class="contact-site">
+        <button class="login-btn">Login</button>
+        <button class="get-in-btn">Get in touch</button>
+    </nav>
+</header>
+
+
 
   <section class="hero">
     <div class="left-hero">
@@ -82,59 +87,46 @@
     </div>
   </section>
 
-  <section class="panel">
-    <div class="panel-container">
+
+    
+    </div>
+    <section class="panel">
         <div class="top-text">        <span >We offer quality,</span><span class="ghost-text">with the best materials and service</span>
+</div> 
+    <div class="features-grid">
+  <div class="feature">
+    <img src="./Images/icon1.png" alt="Layered security icon">
+    <h3>Layered security</h3>
+    <p>With layered security, we ensure the safety of every unit we provide.</p>
+  </div>
+  <div class="feature">
+    <img src="./Images/icon2.png" alt="Quality control icon">
+    <h3>Quality control of each part</h3>
+    <p>Every unit you send is checked carefully for every part.</p>
+  </div>
+  <div class="feature">
+    <img src="./Images/icon3.png" alt="Customer service icon">
+    <h3>Reliable customer service</h3>
+    <p>Our customer service is available 24 hours a week, with qualified people.</p>
+  </div>
+  <div class="feature">
+    <img src="./Images/icon4.png" alt="Manual book icon">
+    <h3>Maintenance manual book</h3>
+    <p>We provide a guidebook that can be used to ensure maximum care.</p>
+  </div>
+  <div class="feature">
+    <img src="./Images/icon5.png" alt="Delivery icon">
+    <h3>Delivered safely</h3>
+    <p>Every unit we send arrives safely and quickly, without any obstacles or drama.</p>
+  </div>
+  <div class="feature">
+    <img src="./Images/icon6.png" alt="AI icon">
+    <h3>Based on artificial intelligence</h3>
+    <p>You can control and view each unit from your phone, it's very easy to use.</p>
+  </div>
 </div>
-    </div>
-    <div class="panel-box">
-        <div class="panel-row-one">
-             <div class="box">
-            <span class="panel-icon">🔐</span>
-            
-            <h2>Layered Security</h2>
-            <p>with layered security, we ensure the safety of every unit we provide</p>
-        </div>
-         <div class="box">
-            <span class="panel-icon">📈</span>
-           
-            <h2>Quality control of each part</h2>
-            <p>Every unit you send is checked carefully for every detail</p>
-        </div>
-         <div class="box">
-            <span class="panel-icon">💬</span>
-           
-            <h2>Reliable customer service</h2>
-            <p>Our customer service is available 24 hours a week,with qualified people</p>
-        </div>
-        </div>
-        <div class="panel-row-two">
-             <div class="box">
-            <span class="panel-icon">📗</span>
-            
-            <h2>Maintenance manual book</h2>
-            <p>We provide a guideook that can be used to ensure maximum cars.</p>
-        </div>
-         <div class="box">
-            <span class="panel-icon">📦</span>
-           
-            <h2>Delivered safely</h2>
-            <p>
-                Every unit we send arrives safely and quickly, withiut any obstacles or drama.
-            </p>
-        </div>
-         <div class="box">
-            <span class="panel-icon">🤖</span>
-            
-            <h2>Based on artificial intelligence</h2>
-            <p>you can control and view each unit from your phone,it is very easy to use.</p>
-        </div>
-        </div>
-       
-    </div> 
-    </div>
-    </div>
   </section>
+   
 
 
   <section class="service">
@@ -191,7 +183,7 @@
     <div class="main-medtronic">
         <div class="left-main-medtronic">
             <h1>Medtronics</h1>
-            <p style="margin-top: 50px;">"We have used services from Xurya for most of our stations,
+            <p style="margin-top: 50px;" >"We have used services from Xurya for most of our stations,
                 this is our strategic step to continue to increase
                 the number of solar panel usage for our station, we are 
                 very statisfied with the services from Xurya"</p>
@@ -239,8 +231,8 @@
   <footer>
      <div class="top-header">
            <div class="top-left-footer">
-        <div style="font-size: 50px;width: 900px; "> 
-                   <span>It's time to support zero pollution, </span><span class="ghost-text">with renewable resources</span> <br>
+        <div style="font-size: 4rem;width: 900px; " class="top-footer"> 
+                   <span >It's time to support zero pollution, </span><span class="ghost-text">with renewable resources</span> <br>
 </div>
 <div class="footer-icon-group">
      <span class="footer-icon">✅  </span><span>Experienced for more than 10 years</span> 
@@ -283,5 +275,15 @@
     </div>
 
   </footer>
+  <script>
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('header nav');
+  const contact = document.querySelector('.contact-site');
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+    contact.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
